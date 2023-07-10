@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Homework_19</title>
+</head>
+<form id="myForm">
+
+    <label for="firstName">Ім'я:</label>
+    <input type="text" id="firstName" required><br><br>
+
+    <label for="lastName">Прізвище:</label>
+    <input type="text" id="lastName" required><br><br>
+
+    <label for="birthdate">Дата народження:</label>
+    <input type="text" id="birthdate" required><br><br>
+
+    <label for="gender">Стать:</label>
+    <input type="radio" id="male" name="gender" value="Чоловік" required>
+    
+    <label for="male">Чоловік</label>
+    <input type="radio" id="female" name="gender" value="Жінка">
+    <label for="female">Жінка</label><br><br>
+
+    <label for="city">Місто:</label>
+    <select id="city" required>
+        <option value="">Оберіть місто</option>
+        <option value="Київ">Київ</option>
+        <option value="Львів">Львів</option>
+        <option value="Харків">Харків</option>
+        <option value="Одеса">Одеса</option>
+    </select>
+    <br><br>
+
+    <label for="address">Адреса:</label>
+    <textarea id="address" required></textarea><br><br>
+
+    <label>Мови, якими володієте:</label><br>
+    <input type="checkbox" id="english" name="languages" value="Англійська">
+    <label for="english">Англійська</label><br>
+    <input type="checkbox" id="spanish" name="languages" value="Іспанська">
+    <label for="spanish">Іспанська</label><br>
+    <input type="checkbox" id="french" name="languages" value="Французька">
+    <label for="french">Французька</label><br><br>
+
+    <input type="button" value="Зберегти" onclick="displayTable()"><br><br>
+</form>
+
+<div id="tableContainer"></div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
